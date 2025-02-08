@@ -40,6 +40,25 @@
   transition: all .3s;
 }
 
+.preloader-el {
+  opacity: 0;
+  transition: opacity 1s ease-out;
+}
+
+.preloader-el {
+  opacity: 0;
+  transition: opacity 1s ease-out;
+}
+
+.preloader-el {
+  opacity: 0;
+  transition: opacity 1s ease-out;
+}
+
+.visible {
+  opacity: 1;
+}
+
 time {
   font-feature-settings: "lnum";
 }
@@ -52,6 +71,7 @@ a {
 body {
   position: relative;
   height: 100vh;
+  overflow: hidden;
 }
 
 li {
