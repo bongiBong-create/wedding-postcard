@@ -1,20 +1,23 @@
 const content = document.querySelector(".main");
 const preloaderElements = document.querySelectorAll(".preloader-el");
 const preloader = document.querySelector(".preloader");
+
 let delay = 1000;
 
-preloaderElements.forEach((el) => {
+preloaderElements.forEach((el, index) => {
   setTimeout(() => {
     el.classList.add("visible");
-  }, delay);
-  delay += 1000;
+  }, delay * (index + 1));
 });
 
 export const loader = () => {
   setTimeout(() => {
-    preloader.style.display = "none";
     preloader.style.opacity = "0";
-    content.style.opacity = "1";
-    document.body.style.overflow = "auto";
-  }, 6000);
+
+    setTimeout(() => {
+      preloader.style.display = "none";
+      content.style.opacity = "1";
+      document.body.style.overflow = "auto";
+    }, 300);
+  }, delay * preloaderElements.length + 1000);
 };

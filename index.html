@@ -5,17 +5,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Wedding</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./styles/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script type="module" src="./scripts/index.js"></script>
 </head>
 
 <body>
   <div class="preloader">
     <h1 class="preloader-el description">
-      СВАДЬБА
+      свадьба
     </h1>
     <h2 class="preloader-el heading">
-      матвей &
+      матвей & <br>
       анастасия
     </h2>
 
@@ -48,7 +50,7 @@
       </h2>
       <ul class="event-list">
         <li class="event-item">
-          <span class="numeric">01</span>
+          <span class="numeric">I</span>
           <h3 class="heading-secondary">
             начало мероприятия
           </h3>
@@ -58,7 +60,7 @@
           </div>
         </li>
         <li class="event-item">
-          <span class="numeric">02</span>
+          <span class="numeric">II</span>
           <h3 class="heading-secondary">
             выездная регистрация
           </h3>
@@ -68,7 +70,7 @@
           </div>
         </li>
         <li class="event-item">
-          <span class="numeric">03</span>
+          <span class="numeric">III</span>
           <h3 class="heading-secondary">
             начало банкета
           </h3>
@@ -78,7 +80,7 @@
           </div>
         </li>
         <li class="event-item">
-          <span class="numeric">04</span>
+          <span class="numeric">IV</span>
           <h3 class="heading-secondary">
             конец мероприятия
           </h3>
@@ -97,18 +99,19 @@
         ГК «Святогор» <br> Адрес: г. Муром, пер. Красногвардейский, 3
       </p>
 
-      <div class="place-slider">
-        <div class="slider-container">
-          <img class="place-slide" width="350" height="250" src="./images/location-1.webp" alt="one">
-          <img class="place-slide" width="350" height="250" src="./images/location-2.webp" alt="two">
-          <img class="place-slide" width="350" height="250" src="./images/location-3.webp" alt="three">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img class="place-slide" width="350" height="250" src="./images/location-1.webp"
+              alt="one"></div>
+          <div class="swiper-slide"> <img class="place-slide" width="350" height="250" src="./images/location-2.webp"
+              alt="two"></div>
+          <div class="swiper-slide"> <img class="place-slide" width="350" height="250" src="./images/location-3.webp"
+              alt="three"></div>
         </div>
-        <div class="pagination">
-        </div>
+        <div class="swiper-pagination"></div>
       </div>
 
-
-      <img width="300" height="300" src="./images/wase.webp" alt="flowers">
+      <img width="300" height="300" src="./images/dress.jpg" alt="flowers">
     </section>
 
     <section class="dress section">
@@ -145,7 +148,7 @@
           <span class="numeric">05</span>
         </li>
       </ul>
-      <img width="300" height="300" src="./images/wase.webp" alt="flowers">
+      <img width="300" height="300" src="./images/contacts.jpg" alt="dress">
     </section>
 
 
@@ -158,11 +161,12 @@
           Присоединяйтесь к нашему общему телеграм-каналу. Там мы будем делиться важной информацией, эмоциями, фото
           и видео.
         </p>
-        <a href="#">Перейти в телеграм-канал</a>
+        <a href="https://t.me/+QxfvFLL9bds0YWY6" target="_blank">Перейти в телеграм-канал</a>
       </div>
-      <img width="300" height="300" src="./images/wase.webp" alt="flowers">
+      <img width="300" height="300" src="./images/wase.webp" alt="contacts">
     </section>
   </main>
+
 </body>
 
 </html>

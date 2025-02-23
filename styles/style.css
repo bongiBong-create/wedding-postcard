@@ -70,6 +70,9 @@ a {
 
 body {
   position: relative;
+  font-size: 15px;
+  line-height: 17px;
+  font-feature-settings: "onum";
   height: 100vh;
   overflow: hidden;
 }
@@ -91,12 +94,12 @@ li {
 .heading {
   text-align: center;
   font-size: 46px;
+  line-height: 44px;
+  text-transform: uppercase;
   font-family: var(--font-base);
   font-weight: 400;
   color: var(--color-black);
   margin-bottom: 12px;
-  line-height: 44px;
-  text-transform: uppercase;
 }
 
 .heading-secondary {
@@ -144,6 +147,7 @@ li {
 
 .event-item .heading {
   margin: 0;
+  margin-bottom: 4px;
 }
 
 .event-item:not(:last-child):after {
@@ -159,32 +163,24 @@ li {
 
 .numeric {
   font-family: var(--font-accent);
+  letter-spacing: 2px;
 }
 
 .place .place-description {
   margin-bottom: 12px;
 }
 
-.place-slider {
+.mySwiper {
   margin-bottom: 40px;
-  max-width: 350px;
-  overflow: hidden;
 }
 
-.place-slide {
-  border-radius: 8px;
-  min-width: 350px;
+.swiper-wrapper {
+  margin-bottom: 27px;
 }
 
-.slider-container {
-  display: flex;
-  transition: transform 0.3s ease-out;
-  cursor: grab;
-  margin-bottom: 8px;
-}
-
-.pagination {
+.swiper-pagination {
   font-family: var(--font-accent);
+  letter-spacing: 0;
 }
 
 .palette-list {
@@ -222,4 +218,23 @@ li {
 
 .contacts-info {
   margin-bottom: 40px;
+}
+
+.preloader .preloader-el {
+  margin-bottom: 0;
+}
+
+.preloader-el.description {
+  text-transform: uppercase;
+  font-family: var(--font-accent);
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+
+.preloader-date time {
+  text-transform: uppercase;
+  font-family: var(--font-accent);
+  font-weight: 400;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
 }
